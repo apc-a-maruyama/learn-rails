@@ -33,6 +33,9 @@
 
               # postgresql_15
               sqlite
+
+              # utils
+              httpie
             ];
 
             shellHook = ''

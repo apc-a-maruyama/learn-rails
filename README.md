@@ -22,9 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-## Setup
-
-```bash
-docker run --rm -v "$(pwd):/app" -w /app ruby:3.4 sh -c "gem install rails && rails new . --api -d sqlite3 --skip-bundle"
-```

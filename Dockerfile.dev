@@ -1,4 +1,4 @@
-FROM ruby:3.4-slim
+FROM ruby:3.2-slim
 
 # RUN apt-get update -qq && \
 #   apt-get install --no-install-recommends -y \
@@ -6,7 +6,11 @@ FROM ruby:3.4-slim
 #   libsqlite3-dev \
 #   pkg-conig
 RUN apt-get update -qq && \
-  apt-get install --no-install-recommends -y build-essential libsqlite3-dev pkg-config
+  apt-get install --no-install-recommends -y \
+  build-essential \
+  libsqlite3-dev \
+  libyaml-dev \
+  pkg-config
 
 WORKDIR /rails
 
